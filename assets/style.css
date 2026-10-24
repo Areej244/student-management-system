@@ -1,0 +1,43 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f1f5f9; color: #1e293b; }
+a { color: #4f46e5; text-decoration: none; }
+
+.nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+       background: #1e1b4b; color: #fff; padding: 12px 24px; }
+.nav a { color: #fff; margin-left: 16px; }
+.wrap { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+
+.card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px #0001; margin-bottom: 20px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.stat span { display: block; font-size: 2.2rem; font-weight: 700; color: #4f46e5; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+
+.searchbar { display: flex; gap: 8px; margin-bottom: 16px; }
+input { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; margin: 4px 0 12px; }
+.searchbar input { margin: 0; }
+label { display: block; font-weight: 600; }
+.btn { background: #4f46e5; color: #fff; border: 0; padding: 10px 18px; border-radius: 8px; cursor: pointer; }
+
+.actions { display: flex; gap: 10px; align-items: center; }
+.actions form { margin: 0; }
+.link { background: none; border: 0; cursor: pointer; color: #4f46e5; padding: 0; font-size: 1rem; }
+.danger { color: #dc2626; }
+
+.pager { display: flex; gap: 6px; flex-wrap: wrap; }
+.pager a { padding: 6px 12px; background: #fff; border-radius: 6px; }
+.pager .active { background: #4f46e5; color: #fff; }
+
+.alert { background: #fee2e2; color: #b91c1c; padding: 10px; border-radius: 8px; }
+.ok { background: #dcfce7; color: #166534; padding: 10px; border-radius: 8px; }
+
+.auth { display: flex; min-height: 100vh; align-items: center; justify-content: center; background: #1e1b4b; }
+.auth-box { width: 100%; max-width: 380px; }
+.form { max-width: 520px; }
+
+/* Loading indicator */
+#loader { position: fixed; inset: 0; background: #fffc; display: none; align-items: center; justify-content: center; z-index: 9; }
+.spinner { width: 44px; height: 44px; border: 5px solid #c7d2fe; border-top-color: #4f46e5; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
