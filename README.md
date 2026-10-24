@@ -42,6 +42,11 @@ HTML5, CSS3, JavaScript, PHP 8, MySQL (XAMPP)
 ### Student Details
 ![Details](screenshots/student-details.png)
 
+### Pagination (Page 2)
+![Page 2](screenshots/students-page2.png)
+
+### User Role (no Add, Edit or Delete options)
+![User Role](screenshots/user-role.png)
 ## Project Structure
 
 ```
